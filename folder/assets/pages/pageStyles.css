@@ -1,0 +1,7 @@
+.page-container {
+    min-height: 100vh;
+    background-color: lightblue;
+    font-size: 36px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
