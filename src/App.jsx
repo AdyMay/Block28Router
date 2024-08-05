@@ -1,16 +1,18 @@
-import MainComponent from "./components/MainComponent"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import React from "react";
+import Main from "./components/Main/Main";
+import Navbar from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer";
 
-export default function App() {
-
+function App() {
   return (
     <>
       <div id="container">
         <Navbar />
-        <MainComponent />
+        <Main />
         <Footer />
       </div>
     </>
-  )
+  );
 }
+
+export default App;
