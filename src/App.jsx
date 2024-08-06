@@ -1,14 +1,23 @@
 import React from "react";
-import Main from "./components/Main/Main";
-import Navbar from "./components/NavBar/Navbar";
-import Footer from "./components/Footer/Footer";
+import Home from "./assets/pages/Home";
+import Navbar from "./assets/pages/NavBar";
+import Footer from "./Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Blue from "./assets/pages/Blue";
+import Red from "./assets/pages/Red";
 
 function App() {
   return (
     <>
       <div id="container">
         <Navbar />
-        <Main />
+        <Routes>
+        <Route path="/" element={<Home />}/>;
+        <Route path="blue" element={<Blue />} />;
+        <Route path="red" element={<Red />} />;
+        <Route path="*" element={<Home />}/>;
+          {/*Different Routes go here*/}
+        </Routes>
         <Footer />
       </div>
     </>
